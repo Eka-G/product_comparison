@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*Обнуление*/
+.content * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.content *, .content *:before, .content *:after {
+  box-sizing: border-box;
+}
+.content :focus, .content :active {
+  outline: none;
+}
+.content a:focus, .content a:active {
+  outline: none;
+}
+.content input, .content button, .content textarea {
+  font-family: inherit;
+}
+.content input::-ms-clear {
+  display: none;
+}
+.content button {
+  cursor: pointer;
+}
+.content button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.content a, .content a:visited {
+  text-decoration: none;
+}
+.content a:hover {
+  text-decoration: none;
+}
+.content ul li {
+  list-style: none;
+}
+.content img {
+  vertical-align: top;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
