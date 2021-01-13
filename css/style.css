@@ -9,12 +9,12 @@
   line-height: 17px;
 }
 
-.compare-items__model, .compare-items__title {
+.compare-footer__buttons, .compare-items__model, .compare-items__title {
   font-size: 16px;
   line-height: 20px;
 }
 
-.compare-table__type, .compare-table__parameter--group-name, .compare-items__prices .new-price {
+.compare-footer__title, .compare-table__type, .compare-table__parameter--group-name, .compare-items__prices .new-price {
   font-size: 20px;
   line-height: 24px;
 }
@@ -228,6 +228,22 @@
   margin-left: 20px;
 }
 
+.compare-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.compare-footer__title {
+  margin-bottom: 33px;
+  max-width: 1100px;
+  font-weight: 600;
+}
+.compare-footer__reser {
+  margin-right: 28px;
+}
 .btn-black-s {
   padding: 10px 15px 10px 15px;
   border-radius: 10px;
@@ -251,7 +267,7 @@
 .btn-white-s {
   padding: 10px 15px 10px 15px;
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #F6F6F6;
   color: #000;
 }
 .btn-white-s:hover, .btn-white-s:focus {
@@ -261,7 +277,7 @@
 .btn-white-l {
   padding: 15px 40px 15px 40px;
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #F6F6F6;
   color: #000;
 }
 .btn-white-l:hover, .btn-white-l:focus {

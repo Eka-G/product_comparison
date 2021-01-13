@@ -19,7 +19,7 @@
 
 
 .btn-white-s {
-	@include button-colored($btn-padding-s, #FFF);
+	@include button-colored($btn-padding-s, #F6F6F6);
 	color: #000;
 	
 	&:hover, &:focus {
@@ -28,7 +28,7 @@
 }
 
 .btn-white-l {
-	@include button-colored($btn-padding-l, #FFF);
+	@include button-colored($btn-padding-l, #F6F6F6);
 	color: #000;
 	
 	&:hover, &:focus {
