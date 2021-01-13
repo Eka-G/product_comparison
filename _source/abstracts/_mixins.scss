@@ -1,0 +1,5 @@
+@mixin button-colored($pad, $col) {
+  padding: $pad;
+  border-radius: 10px;
+  background-color: $col;
+}

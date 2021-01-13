@@ -1,0 +1,21 @@
+
+.btn-black-s {
+	@include button-colored($btn-padding-s, #000);
+	color: #FFF;
+}
+
+.btn-black-l {
+	@include button-colored($btn-padding-l, #000);
+	color: #FFF;
+}
+
+
+.btn-white-s {
+	@include button-colored($btn-padding-s, #FFF);
+	color: #000;
+}
+
+.btn-white-l {
+	@include button-colored($btn-padding-l, #FFF);
+	color: #000;
+}

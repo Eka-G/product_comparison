@@ -1,0 +1,143 @@
+.content {
+	max-width: 1520px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: $text-color;
+}
+
+.compare-items {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+
+	&__filter {	
+		width: 330px;
+	}
+
+	&__headline {
+		display: flex;
+		margin-bottom: 22px;
+	}
+
+	&__title {
+		@extend %font-m;
+	}
+
+	&__help {
+		@extend %help-info;
+		margin-left: 10px;
+	}
+
+	&__select-wrap {
+		margin-bottom: 30px;
+	}
+
+	&__select {
+		@extend %font-s; 
+	}
+
+	// &__choose-parameters {
+	// }
+	// &__radio {
+	// }
+	// &__parameter {
+	// }
+	
+	&__goods {
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-between;
+	}
+
+	// &__item {
+	// }
+
+	&__wrap {
+		position: relative;
+		padding-top: 18px;
+		display: flex;
+		justify-content: flex-start;
+		max-width: 421px;
+	}
+
+	&__delete-item {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #000 url('../img/close.svg') no-repeat center;
+	}
+
+	&__img {
+		margin-right: 25px;
+		bottom: 0;
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-height: 165px;
+	}
+	&__type {
+		@extend %font-s;
+		color: $second-text-color; 
+	}
+
+	&__model {
+		@extend %font-m;
+	}
+
+	&__prices {
+		.new-price {
+			@extend %font-l;
+			margin-right: 5px;
+		}
+		.old-price {
+			@extend %font-s;
+			text-align: center;
+			text-decoration: line-through;
+			color: $second-text-color; 
+		}
+	}
+	&__buy {
+		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		.card {
+			@extend %font-s;
+			margin-right: 20px;
+		}
+
+		.buy-now {
+			@extend %font-xs;
+			position: relative;
+			
+			padding-left: 26px;
+			color: $text-color;
+			
+			&:hover {
+				text-decoration: underline;
+			}
+
+			&:after{
+				position: absolute;
+				display: block;
+				content: '';
+				top: 0;
+				left: 0;
+				width: 16px;
+				height: 16px;
+				background: url('../img/phonIcon.svg') no-repeat center;
+			}
+		}	
+	}
+}
+
+.separator {
+}
