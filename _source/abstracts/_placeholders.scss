@@ -20,7 +20,6 @@
 
 %font-l {
   font-size: 20px;
-  font-weight: 600;
   line-height: 24px;
 }
 
@@ -33,4 +32,7 @@
   text-align: center;
   color: #ACB8CA;
   background: linear-gradient(0deg, #F6F6F6, #F6F6F6), #F0F2F4;
+  background-image: url('../img/question.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }

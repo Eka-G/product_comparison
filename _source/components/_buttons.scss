@@ -2,20 +2,36 @@
 .btn-black-s {
 	@include button-colored($btn-padding-s, #000);
 	color: #FFF;
+	
+	&:hover, &:focus {
+		opacity: 0.8;
+	}
 }
 
 .btn-black-l {
 	@include button-colored($btn-padding-l, #000);
 	color: #FFF;
+	
+	&:hover, &:focus {
+		opacity: 0.8;
+	}
 }
 
 
 .btn-white-s {
 	@include button-colored($btn-padding-s, #FFF);
 	color: #000;
+	
+	&:hover, &:focus {
+		opacity: 0.8;
+	}
 }
 
 .btn-white-l {
 	@include button-colored($btn-padding-l, #FFF);
 	color: #000;
+	
+	&:hover, &:focus {
+		opacity: 0.8;
+	}
 }

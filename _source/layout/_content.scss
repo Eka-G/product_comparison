@@ -1,4 +1,5 @@
 .content {
+	padding-left: 30px;
 	max-width: 1520px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -8,11 +9,10 @@
 .compare-items {
 	display: flex;
 	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 30px;
+	padding-bottom: 30px;
 
 	&__filter {	
-		width: 330px;
+		width: $col1-width;
 	}
 
 	&__headline {
@@ -95,7 +95,9 @@
 		.new-price {
 			@extend %font-l;
 			margin-right: 5px;
+			font-weight: 600;
 		}
+
 		.old-price {
 			@extend %font-s;
 			text-align: center;
@@ -103,6 +105,7 @@
 			color: $second-text-color; 
 		}
 	}
+
 	&__buy {
 		
 		display: flex;
@@ -139,5 +142,82 @@
 	}
 }
 
-.separator {
+// .separator {
+// }
+
+.compare-table {
+	@extend %font-s;
+	
+	&__parameter {
+		display: flex;
+		margin-top: 40px;
+		
+		&--group {
+			margin-top: 20px;
+		}
+		
+		&--group-name {
+			@extend %font-l;
+			margin-bottom: 40px;
+			width: $col1-width;	
+		}
+	}
+
+	&__type {
+		@extend %font-l;
+		width: $col1-width;
+		
+		&--group-name {
+			font-size: 14px;
+  			line-height: 17px;
+			color: $second-text-color;
+		}
+
+		&--help {
+			display: flex;
+			align-items: center;
+			
+		}
+	}
+	
+	&__values {
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+		width: 50%;
+		
+		.bonus {
+			@extend %font-xs;
+			padding: 5px 15px 5px 35px;
+			font-weight: 700;
+			box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.02);
+			border: 2px solid #F0F2F4;
+			border-radius: 5px;
+			background: #FFF;
+			
+			&:before {
+				position: absolute;
+			    top: 0;
+			    left: 15px;
+			    content: '';
+			    width: 15px;
+			    height: 15px;
+			    background: url('../img/bonus.svg') no-repeat center;
+			}
+		}	
+	}
+
+	&__help {
+		@extend %help-info;
+		margin-left: 20px;
+	}
+
+	// &__group {
+	// }
 }
+
+
