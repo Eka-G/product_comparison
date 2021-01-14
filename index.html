@@ -11,489 +11,504 @@
 </head>
 
 <body>
-	<div class="content-wrapper">
+	<div class="wrapper">
+		<div class="content-wrapper">
+			<section class="compare-header container col-12">
+				<nav class="compare-header__nav">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Сравнение товаров</a>
+					</li>
+				</nav>
+				<h1 class="compare-header__title">Сравнение товаров</h1>
+			</section>
+		</div>
 
-		<div class="container content col-12">
+		<div class="content-wrapper content-wrapper--gray">
+			<div class="container content col-12">
 
-			<section class="compare-items col-12">
-				<div class="compare-items__filter">
-					<div class="compare-items__headline">
-						<h2 class="compare-items__title">Для категорий</h2>
-						<span class="compare-items__help tooltips" data-tooltip="Выберите из списка ниже"></span>
-					</div>
-
-					<div class="compare-items__select-wrap">
-						<select name="select_item-type" class="compare-items__select">
-					    	<option value="Смартфоны" selected>Смартфоны</option>
-					    	<option value="Другое">Другое</option>
-						</select>
-					</div>
-
-					<form action="#" class="compare-items__choose-parameters">
-						<input type="radio" id="allParameters" name="chooseParameters" value="all Parameters" class="compare-items__radio" checked>
-						<label for="allParameters" class="compare-items__parameter">Все характеристики</label> <br>
-
-						<input type="radio" id="justDifference" name="chooseParameters" value="difference" class="compare-items__radio">
-						<label for="justDifference" class="compare-items__parameter">Показать только различия</label>
-					</form>
-				</div> <!-- compare-items__filter -->
-				
-				<div class="compare-items__goods">
-					<div class="compare-items__item col-6">
-						<div class="compare-items__wrap">
-							<a href="" class="compare-items__delete-item"></a>
-							
-							<div class="compare-items__img">
-								<img src="img/iPhone.png" alt="Apple iPhone 11 64 Gb (Gold)">
-							</div>
-							<div class="compare-items__description">
-								<div class="compare-items__type">Смартфоны</div>
-								<div class="compare-items__model">Apple iPhone 11 64 Gb (Gold)</div>
-								<div class="compare-items__prices">
-									<span class="new-price">49 999 ₽</span>
-									<span class="old-price">60 999 ₽</span>
-								</div>
-
-								<div class="compare-items__buy">
-									<button type="button" class="card btn-black-s">В корзину</button>
-									<a href="#" class="buy-now">Купить в 1 клик</a>
-								</div>
-							</div>
+				<section class="compare-items col-12">
+					<div class="compare-items__filter">
+						<div class="compare-items__headline">
+							<h2 class="compare-items__title">Для категорий</h2>
+							<span class="compare-items__help tooltips" data-tooltip="Выберите из списка ниже"></span>
 						</div>
-					</div> <!-- compare-items__item -->
 
-					<div class="compare-items__item col-6">
-						<div class="compare-items__wrap">
-							<a href="" class="compare-items__delete-item"></a>
-							<div class="compare-items__img">
-								<img src="img/Xiaomi.png" alt="Xiaomi Redmi Note 8 Pro (blue)">
-							</div>
-							<div class="compare-items__description">
+						<div class="compare-items__select-wrap">
+							<select name="select_item-type" class="compare-items__select">
+						    	<option value="Смартфоны" selected>Смартфоны</option>
+						    	<option value="Другое">Другое</option>
+							</select>
+						</div>
+
+						<form action="#" class="compare-items__choose-parameters">
+							<input type="radio" id="allParameters" name="chooseParameters" value="all Parameters" class="compare-items__radio" checked>
+							<label for="allParameters" class="compare-items__parameter">Все характеристики</label> <br>
+
+							<input type="radio" id="justDifference" name="chooseParameters" value="difference" class="compare-items__radio">
+							<label for="justDifference" class="compare-items__parameter">Показать только различия</label>
+						</form>
+					</div> <!-- compare-items__filter -->
+					
+					<div class="compare-items__goods">
+						<div class="compare-items__item col-6">
+							<div class="compare-items__wrap">
+								<a href="" class="compare-items__delete-item"></a>
 								
-								<div class="compare-items__type">Смартфоны</div>
-								<div class="compare-items__model">Xiaomi Redmi Note 8 Pro (blue)</div>
-								<div class="compare-items__prices">
-									<span class="new-price">16 700 ₽</span>
-									<span class="old-price">19 999 ₽</span>
+								<div class="compare-items__img">
+									<img src="img/iPhone.png" alt="Apple iPhone 11 64 Gb (Gold)">
 								</div>
+								<div class="compare-items__description">
+									<div class="compare-items__type">Смартфоны</div>
+									<div class="compare-items__model">Apple iPhone 11 64 Gb (Gold)</div>
+									<div class="compare-items__prices">
+										<span class="new-price">49 999 ₽</span>
+										<span class="old-price">60 999 ₽</span>
+									</div>
 
-								<div class="compare-items__buy">
-									<button class="card btn-black-s">В корзину</button>
-									<a href="#" class="buy-now">Купить в 1 клик</a>
+									<div class="compare-items__buy">
+										<button type="button" class="card btn-black-s">В корзину</button>
+										<a href="#" class="buy-now">Купить в 1 клик</a>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div> <!-- compare-items__item -->
+						</div> <!-- compare-items__item -->
 
-				</div> <!-- compare-items__goods -->
-			</section> <!-- compare-items -->
-			
-			<hr class="separator">
+						<div class="compare-items__item col-6">
+							<div class="compare-items__wrap">
+								<a href="" class="compare-items__delete-item"></a>
+								<div class="compare-items__img">
+									<img src="img/Xiaomi.png" alt="Xiaomi Redmi Note 8 Pro (blue)">
+								</div>
+								<div class="compare-items__description">
+									
+									<div class="compare-items__type">Смартфоны</div>
+									<div class="compare-items__model">Xiaomi Redmi Note 8 Pro (blue)</div>
+									<div class="compare-items__prices">
+										<span class="new-price">16 700 ₽</span>
+										<span class="old-price">19 999 ₽</span>
+									</div>
 
-			<section class="compare-table col-12">
-				<div class="compare-table__parameter">
-					<div class="compare-table__type">
-						<h3>Бонусные рубли</h3>
-					</div>
-
-					<div class="compare-table__values">
-						<div class="compare-table__item col-6">
-							<span class="bonus">+ 2 000 бонусов</span>
-						</div>
-						<div class="compare-table__item col-6">
-							<span class="bonus">+ 1 000 бонусов</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="compare-table__parameter">
-					<div class="compare-table__type">
-						<h3>Акции и специальные <br>
-						предложения</h3>
-					</div>
-
-					<div class="compare-table__values">
-						<div class="compare-table__item col-6">
-							<span>Рассрочка</span>
-						</div>
-						<div class="compare-table__item col-6">
-							<span>Скидка 50% на наушники</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="compare-table__parameter">
-					<div class="compare-table__type">
-						<h3>Наличие</h3>
-					</div>
-
-					<div class="compare-table__values">
-						<div class="compare-table__item col-6">
-							<span>В наличии</span>
-						</div>
-						<div class="compare-table__item col-6">
-							<span>От 3 до 5 дней</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="compare-table__group">
-					<div class="compare-table__parameter compare-table__parameter--group-name">
-						<h3>Основные</h3>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Операционная система</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>iOS 13</span>
+									<div class="compare-items__buy">
+										<button class="card btn-black-s">В корзину</button>
+										<a href="#" class="buy-now">Купить в 1 клик</a>
+									</div>
+								</div>
 							</div>
-							<div class="compare-table__item col-6">
-								<span>iOS 13</span>
-							</div>
-						</div>
-					</div>
+						</div> <!-- compare-items__item -->
 
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Цвет</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>золотой</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>черный</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Год выпуска</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>2019</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>2019</span>
-							</div>
-						</div>
-					</div>
-				</div> <!-- compare-table__group -->
-
-				<div class="compare-table__group">
-					<div class="compare-table__parameter compare-table__parameter--group-name">
-						<h3>Процессор</h3>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Производитель</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>Apple</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>Apple</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Цвет</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>A13 Bionic</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>A13 Bionic</span>
-							</div>
-						</div>
-					</div>
-				</div> <!-- compare-table__group -->
-
-				<div class="compare-table__group">
-					<div class="compare-table__parameter compare-table__parameter--group-name">
-						<h3>Экран</h3>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Диагональ (дюймов)</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>5,8</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>5,8</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Тип экрана </h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>Super Retina XDR</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>Super Retina XDR</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Разрешение экрана</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>2436×1125 точек</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>2436×1125 точек</span>
-							</div>
-						</div>
-					</div>
-				</div> <!-- compare-table__group -->
-
-				<div class="compare-table__group">
-					<div class="compare-table__parameter compare-table__parameter--group-name">
-						<h3>Камера</h3>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Количество основных камер</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>3</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>3</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Разрешения основных камер</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>12 МПикс, 12 МПикс, 12 МПикс</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>12 МПикс, 12 МПикс, 12 МПикс</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Функции основной камеры</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span class="col">Режим «Портрет», портретное освещение, оптическая<br> стабилизация, вспышка True Tone, Focus Pixels</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Фронтальная камера</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Разрешение фронтальной камеры</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>12 Мпикс</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>12 Мпикс</span>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Вспышка</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>есть, светодиодная</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>есть, светодиодная</span>
-							</div>
-						</div>
-					</div>
-				</div> <!-- compare-table__group -->
-
-				<div class="compare-table__group">
-					<div class="compare-table__parameter compare-table__parameter--group-name">
-						<h3>Память</h3>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Встроенная память</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>64 Гб</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>64 Гб</span>
-							</div>
-						</div>
-					</div>
-				</div> <!-- compare-table__group -->
-
-				<div class="compare-table__group">
-					<div class="compare-table__parameter compare-table__parameter--group-name">
-						<h3>Питание</h3>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Тип разъема для зарядки</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>Lightning</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>Lightning</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Функция быстрой зарядки</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Функция беспроводной зарядки</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-						</div>
-					</div>
-				</div> <!-- compare-table__group -->
-
-				<div class="compare-table__group">
-					<div class="compare-table__parameter compare-table__parameter--group-name">
-						<h3>Подключение</h3>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name compare-table__type--help">
-							<h4>Разъем Lightning 8 Pin</h4>
-							<span id="help-info" class="compare-table__help tooltips" data-tooltip="<strong>4500 мАч</strong> - это примерно 30 часов активного использования устройства"></span>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="compare-table__parameter compare-table__parameter--group">
-						<div class="compare-table__type compare-table__type--group-name">
-							<h4>Разъем для наушников</h4>
-						</div>
-
-						<div class="compare-table__values">
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-							<div class="compare-table__item col-6">
-								<span>есть</span>
-							</div>
-						</div>
-					</div>
-				</div> <!-- compare-table__group -->
+					</div> <!-- compare-items__goods -->
+				</section> <!-- compare-items -->
 				
-			</section>
+				<hr class="separator">
 
-			<section class="compare-footer">
-				<p class="compare-footer__title"> Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A) - сравнение основных характеристик моделей</p>
+				<section class="compare-table col-12">
+					<div class="compare-table__parameter">
+						<div class="compare-table__type">
+							<h3>Бонусные рубли</h3>
+						</div>
 
-				<div class="compare-footer__buttons">
-					<button class="compare-footer__reser btn-white-l">Очистить список</button>
-					<button class="compare-footer__back btn-black-l">Назад к товарам</button>
-				</div>
-			</section>
+						<div class="compare-table__values">
+							<div class="compare-table__item col-6">
+								<span class="bonus">+ 2 000 бонусов</span>
+							</div>
+							<div class="compare-table__item col-6">
+								<span class="bonus">+ 1 000 бонусов</span>
+							</div>
+						</div>
+					</div>
 
-		</div> <!-- container -->
-	</div> <!-- content-wrapper -->
+					<div class="compare-table__parameter">
+						<div class="compare-table__type">
+							<h3>Акции и специальные <br>
+							предложения</h3>
+						</div>
+
+						<div class="compare-table__values">
+							<div class="compare-table__item col-6">
+								<span>Рассрочка</span>
+							</div>
+							<div class="compare-table__item col-6">
+								<span>Скидка 50% на наушники</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="compare-table__parameter">
+						<div class="compare-table__type">
+							<h3>Наличие</h3>
+						</div>
+
+						<div class="compare-table__values">
+							<div class="compare-table__item col-6">
+								<span>В наличии</span>
+							</div>
+							<div class="compare-table__item col-6">
+								<span>От 3 до 5 дней</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="compare-table__group">
+						<div class="compare-table__parameter compare-table__parameter--group-name">
+							<h3>Основные</h3>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Операционная система</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>iOS 13</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>iOS 13</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Цвет</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>золотой</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>черный</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Год выпуска</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>2019</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>2019</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- compare-table__group -->
+
+					<div class="compare-table__group">
+						<div class="compare-table__parameter compare-table__parameter--group-name">
+							<h3>Процессор</h3>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Производитель</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>Apple</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>Apple</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Цвет</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>A13 Bionic</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>A13 Bionic</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- compare-table__group -->
+
+					<div class="compare-table__group">
+						<div class="compare-table__parameter compare-table__parameter--group-name">
+							<h3>Экран</h3>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Диагональ (дюймов)</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>5,8</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>5,8</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Тип экрана </h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>Super Retina XDR</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>Super Retina XDR</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Разрешение экрана</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>2436×1125 точек</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>2436×1125 точек</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- compare-table__group -->
+
+					<div class="compare-table__group">
+						<div class="compare-table__parameter compare-table__parameter--group-name">
+							<h3>Камера</h3>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Количество основных камер</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>3</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>3</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Разрешения основных камер</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>12 МПикс, 12 МПикс, 12 МПикс</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>12 МПикс, 12 МПикс, 12 МПикс</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Функции основной камеры</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span class="col">Режим «Портрет», портретное освещение, оптическая<br> стабилизация, вспышка True Tone, Focus Pixels</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Фронтальная камера</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Разрешение фронтальной камеры</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>12 Мпикс</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>12 Мпикс</span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Вспышка</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>есть, светодиодная</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>есть, светодиодная</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- compare-table__group -->
+
+					<div class="compare-table__group">
+						<div class="compare-table__parameter compare-table__parameter--group-name">
+							<h3>Память</h3>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Встроенная память</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>64 Гб</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>64 Гб</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- compare-table__group -->
+
+					<div class="compare-table__group">
+						<div class="compare-table__parameter compare-table__parameter--group-name">
+							<h3>Питание</h3>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Тип разъема для зарядки</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>Lightning</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>Lightning</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Функция быстрой зарядки</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Функция беспроводной зарядки</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- compare-table__group -->
+
+					<div class="compare-table__group">
+						<div class="compare-table__parameter compare-table__parameter--group-name">
+							<h3>Подключение</h3>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name compare-table__type--help">
+								<h4>Разъем Lightning 8 Pin</h4>
+								<span id="help-info" class="compare-table__help tooltips" data-tooltip="<strong>4500 мАч</strong> - это примерно 30 часов активного использования устройства"></span>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="compare-table__parameter compare-table__parameter--group">
+							<div class="compare-table__type compare-table__type--group-name">
+								<h4>Разъем для наушников</h4>
+							</div>
+
+							<div class="compare-table__values">
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+								<div class="compare-table__item col-6">
+									<span>есть</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- compare-table__group -->
+					
+				</section>
+
+				<section class="compare-footer">
+					<p class="compare-footer__title"> Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A) - сравнение основных характеристик моделей</p>
+
+					<div class="compare-footer__buttons">
+						<button class="compare-footer__reser btn-white-l">Очистить список</button>
+						<button class="compare-footer__back btn-black-l">Назад к товарам</button>
+					</div>
+				</section>
+
+			</div> <!-- container -->
+		</div> <!-- content-wrapper -->
+	</div> <!--wrapper-->
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/@popperjs/core@2"></script>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .compare-table__item .bonus, .compare-items__buy .buy-now {
   font-size: 12px;
   line-height: 15px;
@@ -19,6 +18,12 @@
   line-height: 24px;
 }
 
+.compare-header__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+}
+
 .compare-table__help, .compare-items__help {
   display: inline-block;
   width: 24px;
@@ -34,58 +39,103 @@
   background-position: center;
 }
 
-/*Обнуление*/
-.content * {
+* {
   padding: 0;
   margin: 0;
   border: 0;
 }
-.content *, .content *:before, .content *:after {
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
-.content :focus, .content :active {
+
+:focus, :active {
   outline: none;
 }
-.content a:focus, .content a:active {
+
+a:focus, a:active {
   outline: none;
 }
-.content input, .content button, .content textarea {
+
+input, button, textarea {
   font-family: inherit;
 }
-.content input::-ms-clear {
+
+input::-ms-clear {
   display: none;
 }
-.content button {
+
+button {
   cursor: pointer;
 }
-.content button::-moz-focus-inner {
+
+button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-.content a, .content a:visited {
+
+a, a:visited {
   text-decoration: none;
 }
-.content a:hover {
+
+a:hover {
   text-decoration: none;
 }
-.content ul li {
+
+ul li {
   list-style: none;
 }
-.content img {
+
+img {
   vertical-align: top;
 }
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
 
 /*--------------------*/
 .content-wrapper {
+  background-color: #FFF;
+}
+.content-wrapper--gray {
   padding-top: 10px;
   padding-bottom: 80px;
   background-color: #F6F6F6;
 }
 
+.compare-header {
+  max-width: 1520px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.compare-header__nav {
+  display: flex;
+  margin-bottom: 30px;
+}
+.compare-header__nav li {
+  position: relative;
+  margin-right: 35px;
+  list-style: none;
+}
+.compare-header__nav li:after {
+  position: absolute;
+  diaplay: block;
+  content: "\\";
+  top: 0;
+  right: -20px;
+  color: #9A9A9A;
+}
+.compare-header__nav li:last-child:after {
+  content: "";
+}
+.compare-header__nav a {
+  color: #9A9A9A;
+}
+.compare-header__nav a:hover {
+  text-decoration: underline;
+}
 .content {
   padding-left: 30px;
   max-width: 1520px;

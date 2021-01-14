@@ -1,12 +1,60 @@
 .content-wrapper {
-	padding-top: 10px;
-	padding-bottom: 80px;
-	background-color: #F6F6F6;
+	background-color: #FFF;
+	
+	&--gray {
+		padding-top: 10px;
+		padding-bottom: 80px;
+		background-color: #F6F6F6;
+	}
 }
+
+.compare-header {
+	max-width: $content-width;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	&__nav {
+		display: flex;
+		margin-bottom: 30px;
+		
+		li {
+			position: relative;
+			margin-right: 35px;
+			list-style: none;
+		 
+		 	&:after {
+		 		position: absolute;
+		 		diaplay: block;
+		 		content: '\\';
+		 		top: 0;
+		 		right: -20px;
+		 		color: $second-text-color
+		 	}
+
+		 	&:last-child:after {
+		 		content: '';
+		 	}
+		}
+
+		a {
+			color: $second-text-color;
+			
+			&:hover {
+				text-decoration: underline;
+			}	
+		}
+	}
+
+	&__title{
+		@extend %font-xl;
+	}
+}
+
+
 
 .content {
 	padding-left: 30px;
-	max-width: 1520px;
+	max-width: $content-width;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
