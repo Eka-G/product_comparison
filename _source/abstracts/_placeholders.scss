@@ -23,7 +23,7 @@
   line-height: 24px;
 }
 
-%help-info {
+%tooltip-info {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -31,6 +31,7 @@
   font-weight: 600;
   text-align: center;
   color: #ACB8CA;
+  cursor: pointer;
   background: linear-gradient(0deg, #F6F6F6, #F6F6F6), #F0F2F4;
   background-image: url('../img/question.svg');
   background-repeat: no-repeat;

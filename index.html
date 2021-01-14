@@ -17,7 +17,7 @@
 			<div class="compare-items__filter">
 				<div class="compare-items__headline">
 					<h2 class="compare-items__title">Для категорий</h2>
-					<span class="compare-items__help"></span>
+					<span class="compare-items__help tooltips" data-tooltip="Выберите из списка ниже"></span>
 				</div>
 
 				<div class="compare-items__select-wrap">
@@ -29,15 +29,11 @@
 
 
 				<form action="#" class="compare-items__choose-parameters">
-
 					<input type="radio" id="allParameters" name="chooseParameters" value="all Parameters" class="compare-items__radio" checked>
 					<label for="allParameters" class="compare-items__parameter">Все характеристики</label> <br>
 
 					<input type="radio" id="justDifference" name="chooseParameters" value="difference" class="compare-items__radio">
 					<label for="justDifference" class="compare-items__parameter">Показать только различия</label>
-				</form>
-
-					
 				</form>
 			</div> <!-- compare-items__filter -->
 			
@@ -155,7 +151,7 @@
 							<span>iOS 13</span>
 						</div>
 						<div class="compare-table__item col-6">
-							<span>iOS 13</span> <!--?Android-->
+							<span>iOS 13</span>
 						</div>
 					</div>
 				</div>
@@ -206,7 +202,7 @@
 							<span>Apple</span>
 						</div>
 						<div class="compare-table__item col-6">
-							<span>Apple</span> <!--?Android-->
+							<span>Apple</span>
 						</div>
 					</div>
 				</div>
@@ -242,7 +238,7 @@
 							<span>5,8</span>
 						</div>
 						<div class="compare-table__item col-6">
-							<span>5,8</span> <!--?Android-->
+							<span>5,8</span>
 						</div>
 					</div>
 				</div>
@@ -293,7 +289,7 @@
 							<span>3</span>
 						</div>
 						<div class="compare-table__item col-6">
-							<span>3</span> <!--?Android-->
+							<span>3</span>
 						</div>
 					</div>
 				</div>
@@ -390,7 +386,7 @@
 							<span>64 Гб</span>
 						</div>
 						<div class="compare-table__item col-6">
-							<span>64 Гб</span> <!--?Android-->
+							<span>64 Гб</span>
 						</div>
 					</div>
 				</div>
@@ -411,7 +407,7 @@
 							<span>Lightning</span>
 						</div>
 						<div class="compare-table__item col-6">
-							<span>Lightning</span> <!--?Android-->
+							<span>Lightning</span>
 						</div>
 					</div>
 				</div>
@@ -455,7 +451,7 @@
 				<div class="compare-table__parameter compare-table__parameter--group">
 					<div class="compare-table__type compare-table__type--group-name compare-table__type--help">
 						<h4>Разъем Lightning 8 Pin</h4>
-						<span class="compare-table__help"></span>
+						<span id="help-info" class="compare-table__help tooltips" data-tooltip="<strong>4500 мАч</strong> - это примерно 30 часов активного использования устройства"></span>
 					</div>
 
 					<div class="compare-table__values">
@@ -463,7 +459,7 @@
 							<span>есть</span>
 						</div>
 						<div class="compare-table__item col-6">
-							<span>есть</span> <!--?Android-->
+							<span>есть</span>
 						</div>
 					</div>
 				</div>
@@ -497,6 +493,10 @@
 
 	</div> <!-- container -->
 
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

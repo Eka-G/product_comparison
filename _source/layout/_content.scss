@@ -3,6 +3,8 @@
 	max-width: 1520px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
+	border-radius: 10px;
+	background: #FFF;
 	color: $text-color;
 }
 
@@ -12,7 +14,7 @@
 	padding-bottom: 30px;
 
 	&__filter {	
-		width: $col1-width;
+		min-width: $col1-width;
 	}
 
 	&__headline {
@@ -25,7 +27,7 @@
 	}
 
 	&__help {
-		@extend %help-info;
+		@extend %tooltip-info;
 		margin-left: 10px;
 	}
 
@@ -37,21 +39,11 @@
 		@extend %font-s; 
 	}
 
-	// &__choose-parameters {
-	// }
-	// &__radio {
-	// }
-	// &__parameter {
-	// }
-	
 	&__goods {
 		display: flex;
 		flex-grow: 1;
 		justify-content: space-between;
 	}
-
-	// &__item {
-	// }
 
 	&__wrap {
 		position: relative;
@@ -142,8 +134,10 @@
 	}
 }
 
-// .separator {
-// }
+.separator {
+	height: 2px;
+	background: #D1D1D1;
+}
 
 .compare-table {
 	@extend %font-s;
@@ -165,7 +159,7 @@
 
 	&__type {
 		@extend %font-l;
-		width: $col1-width;
+		min-width: $col1-width;
 		
 		&--group-name {
 			font-size: 14px;
@@ -212,7 +206,7 @@
 	}
 
 	&__help {
-		@extend %help-info;
+		@extend %tooltip-info;
 		margin-left: 20px;
 	}
 
@@ -244,5 +238,4 @@
 	&__back {
 	}
 }
-
 
