@@ -1,3 +1,7 @@
+.container {
+	max-width: $content-width;
+}
+
 .content-wrapper {
 	background-color: #FFF;
 	
@@ -9,7 +13,6 @@
 }
 
 .compare-header {
-	max-width: $content-width;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	
@@ -54,7 +57,6 @@
 
 .content {
 	padding-left: 30px;
-	max-width: $content-width;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
@@ -103,7 +105,7 @@
 	&__wrap {
 		position: relative;
 		padding-top: 18px;
-		display: flex;
+		display: inline-flex;
 		justify-content: flex-start;
 		max-width: 421px;
 	}
@@ -119,26 +121,34 @@
 	}
 
 	&__img {
+		display: block;	
 		margin-right: 25px;
 		bottom: 0;
+		
+		img {
+			max-width: 120px;
+			max-height: 147px;
+		}
 	}
 
 	&__description {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 		max-height: 165px;
 	}
 	&__type {
 		@extend %font-s;
+		margin-bottom: 	15px;
 		color: $second-text-color; 
 	}
 
 	&__model {
 		@extend %font-m;
+		margin-bottom: 	20px;
 	}
 
 	&__prices {
+		margin-bottom: 	15px;
 		.new-price {
 			@extend %font-l;
 			margin-right: 5px;
@@ -156,7 +166,6 @@
 	&__buy {
 		
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 		
 		.card {
@@ -239,6 +248,11 @@
 		position: relative;
 		width: 50%;
 		
+		p {
+			display: block;	
+			max-width: 75%;
+		}
+		
 		.bonus {
 			@extend %font-xs;
 			padding: 5px 15px 5px 35px;
@@ -293,4 +307,5 @@
 	&__back {
 	}
 }
+
 

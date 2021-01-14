@@ -96,6 +96,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.container {
+  max-width: 1520px;
+}
+
 .content-wrapper {
   background-color: #FFF;
 }
@@ -106,7 +110,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .compare-header {
-  max-width: 1520px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -138,7 +141,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content {
   padding-left: 30px;
-  max-width: 1520px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
@@ -173,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 .compare-items__wrap {
   position: relative;
   padding-top: 18px;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   max-width: 421px;
 }
@@ -187,17 +189,28 @@ h1, h2, h3, h4, h5, h6 {
   background: #000 url("../img/close.svg") no-repeat center;
 }
 .compare-items__img {
+  display: block;
   margin-right: 25px;
   bottom: 0;
+}
+.compare-items__img img {
+  max-width: 120px;
+  max-height: 147px;
 }
 .compare-items__description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   max-height: 165px;
 }
 .compare-items__type {
+  margin-bottom: 15px;
   color: #9A9A9A;
+}
+.compare-items__model {
+  margin-bottom: 20px;
+}
+.compare-items__prices {
+  margin-bottom: 15px;
 }
 .compare-items__prices .new-price {
   margin-right: 5px;
@@ -210,7 +223,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .compare-items__buy {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .compare-items__buy .card {
@@ -271,6 +283,10 @@ h1, h2, h3, h4, h5, h6 {
 .compare-table__item {
   position: relative;
   width: 50%;
+}
+.compare-table__item p {
+  display: block;
+  max-width: 75%;
 }
 .compare-table__item .bonus {
   padding: 5px 15px 5px 35px;
