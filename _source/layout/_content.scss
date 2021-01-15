@@ -17,8 +17,12 @@
 	padding-bottom: 30px;
 	
 	&__nav {
-		display: flex;
 		margin-bottom: 30px;
+		
+		ul{ 
+			padding: 0;
+			display: flex;
+		}
 		
 		li {
 			position: relative;
@@ -27,7 +31,7 @@
 		 
 		 	&:after {
 		 		position: absolute;
-		 		diaplay: block;
+		 		display: block;
 		 		content: '\\';
 		 		top: 0;
 		 		right: -20px;
@@ -54,7 +58,7 @@
 	}
 }
 
-
+//CONTENT
 .content {
 	padding: 65px 25px 60px 25px;
 	font-family: 'Montserrat', sans-serif;
@@ -65,6 +69,7 @@
 	color: $text-color;
 }
 
+//COMPARE ITEMS
 .compare-items {
 	display: flex;
 	padding-bottom: 50px;
@@ -76,8 +81,8 @@
 	}
 
 	&__headline {
-		display: flex;
 		margin-bottom: 22px;
+		display: flex;
 	}
 
 	&__title {
@@ -98,9 +103,8 @@
 	}
 
 	.radio-wrapper {
-		display: flex;
-		// align-items: center;
 		margin-bottom: 20px;		
+		display: flex;
 	}
 
 	&__goods {
@@ -128,8 +132,8 @@
 	}
 
 	&__img {
-		display: block;	
 		margin-right: 25px;
+		display: block;	
 		bottom: 0;
 		
 		img {
@@ -171,7 +175,6 @@
 	}
 
 	&__buy {
-		
 		display: flex;
 		align-items: center;
 		
@@ -183,7 +186,6 @@
 		.buy-now {
 			@extend %font-xs;
 			position: relative;
-			
 			padding-left: 26px;
 			color: $text-color;
 			
@@ -211,6 +213,7 @@
 	background: #D1D1D1;
 }
 
+//COMPARE TABLE
 .compare-table {
 	@extend %font-s;
 	
@@ -250,14 +253,13 @@
 		
 		&--group-name {
 			font-size: 14px;
-  			line-height: 17px;
+  		line-height: 17px;
 			color: $second-text-color;
 		}
 
 		&--help {
 			display: flex;
 			align-items: center;
-			
 		}
 	}
 	
@@ -287,12 +289,12 @@
 			
 			&:before {
 				position: absolute;
-			    top: 0;
-			    left: 15px;
-			    content: '';
-			    width: 15px;
-			    height: 15px;
-			    background: url('../img/bonus.svg') no-repeat center;
+		    top: 0;
+		    left: 15px;
+		    content: '';
+		    width: 15px;
+		    height: 15px;
+		    background: url('../img/bonus.svg') no-repeat center;
 			}
 		}	
 	}
@@ -301,17 +303,14 @@
 		@extend %tooltip-info;
 		margin-left: 20px;
 	}
-
-	// &__group {
-	// }
 }
 
 .compare-footer {
+	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding-top: 40px;
 		
 	&__title {
 		@extend %font-l;
@@ -335,7 +334,7 @@
 	}
 
 	.content-wrapper--grey {
-	    padding-top: 30px;
+	  padding-top: 30px;
 	}
 
 	.content {
@@ -357,13 +356,13 @@
 	}
 
 	.content-wrapper--grey {
-	    padding-top: 45px;
+	  padding-top: 45px;
 	}
 
 	.compare-items__filter,
 	.compare-table__type {
-	    margin-right: 30px;
-	    max-width: 240px;
+    margin-right: 30px;
+    max-width: 240px;
 	}
 
 	.compare-items {
@@ -388,8 +387,8 @@
 		&__item {
 			&:last-child {
 				display: flex;
-    			justify-content: flex-end;
-    		}
+    		justify-content: flex-end;
+    	}
 		}
 	}
 
@@ -411,8 +410,8 @@
  
 	.compare-items__filter,
 	.compare-table__type {
-	    margin-right: 10px;
-	    max-width: 195px;
+    margin-right: 10px;
+    max-width: 195px;
 	}
 
 	.compare-items {
@@ -431,12 +430,12 @@
 
 		.tooltips {
 			width: 17px;
-  			height: 17px;
-  			background-size: 40%;
+			height: 17px;
+			background-size: 40%;
 		}
 
 		&__wrap {
-		    max-width: 170px;
+		  max-width: 170px;
 		}
 	}
 
@@ -450,14 +449,15 @@
 	    display: flex;
 	    align-items: start;
     }
+
 		&__help {
 			margin: 0;
 		}
 	}
 
 	.compare-footer__title {
-	    font-size: 16px;
-	    line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
 	}
 
 }
@@ -487,13 +487,13 @@
  
 	.compare-items__filter,
 	.compare-table__type {
-	    padding-right: 10px;
-	    max-width: 300px;
+    padding-right: 10px;
+    max-width: 300px;
 	}
 
 	.compare-items {
-		display: block;
 		padding-bottom: 35px;
+		display: block;
 		
 		&__item {
 			display: flex;
@@ -515,16 +515,16 @@
 			
 			&:before {
 				left: -28px;
-			    width: 12.5px;
-			    height: 12.5px;
-			    border: 1px solid #4BB1BC;
+		    width: 12.5px;
+		    height: 12.5px;
+		    border: 1px solid #4BB1BC;
 			}
 
 			&:after {
 				top: 5px;
 				left: -26px;
 				width: 8.5px;
-			    height: 8.5px;
+			  height: 8.5px;
 			}
 		}
 
@@ -583,8 +583,8 @@
 			
 			h3 {
 				position: relative;
-			    width: max-content;
-			    word-wrap: normal;
+			  width: max-content;
+			  word-wrap: normal;
 			}
 
 			h3:after {
@@ -597,15 +597,15 @@
 				width: 15px;
 				height: 15px;
 				background-image: url('../img/parameterArrow.svg');
-  				background-repeat: no-repeat;
-  				background-position: center;
-  				cursor: pointer;
+				background-repeat: no-repeat;
+				background-position: center;
+				cursor: pointer;
 			}
 		}
 
 		&__type {
-			min-width: 100%;
 			margin-bottom: 15px;
+			min-width: 100%;
 			font-size: 14px;
 			line-height: 17px;
 		}
@@ -620,12 +620,11 @@
 		}
 
 		.bonus {
-			// margin-top: 5px;
 			padding: 5px 10px 5px 30px;
 			
 			&:before {
 				top: -3px;
-    			left: 12px;
+    		left: 12px;
 			}
 		}
 
@@ -635,6 +634,7 @@
 	}
 
 	.compare-footer {
+
 		&__reset {
 			margin: 0 0 10px 0;
 		}
@@ -645,6 +645,7 @@
 	.container {
 		max-width: 320px;
 	}
+
 	.content {
 		padding: 20px 20px 50px 20px;
 	}
@@ -653,13 +654,13 @@
 		
 		&__title {
 			width: 200px;
-		    font-size: 28px;
+		  font-size: 28px;
 			line-height: 34px;
 		}
 
 		&__nav {
 			margin-bottom: 	12px;
-		    font-size: 12px;
+		  font-size: 12px;
 			line-height: 15px;
 		}
 	}
@@ -667,12 +668,13 @@
 	.compare-items {
 
 		&__buy {
+
 			button {
 				width: 50px;
-    			height: 30px;
+    		height: 30px;
 				background-image: url('../img/cart.svg');
 				background-repeat: no-repeat;
-  				background-position: center;
+  			background-position: center;
 			}
 
 			button span {
@@ -713,9 +715,8 @@
 		padding-top: 0px;
 
 		&__title {
-			
-		    font-size: 12px;
-		    line-height: 15px;
+	    font-size: 12px;
+	    line-height: 15px;
 	    }
 	}
 }

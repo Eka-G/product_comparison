@@ -247,8 +247,11 @@ p {
   padding-bottom: 30px;
 }
 .compare-header__nav {
-  display: flex;
   margin-bottom: 30px;
+}
+.compare-header__nav ul {
+  padding: 0;
+  display: flex;
 }
 .compare-header__nav li {
   position: relative;
@@ -257,7 +260,7 @@ p {
 }
 .compare-header__nav li:after {
   position: absolute;
-  diaplay: block;
+  display: block;
   content: "\\";
   top: 0;
   right: -20px;
@@ -296,8 +299,8 @@ p {
   max-width: 340px;
 }
 .compare-items__headline {
-  display: flex;
   margin-bottom: 22px;
+  display: flex;
 }
 .compare-items__help {
   margin-left: 10px;
@@ -306,8 +309,8 @@ p {
   margin-bottom: 30px;
 }
 .compare-items .radio-wrapper {
-  display: flex;
   margin-bottom: 20px;
+  display: flex;
 }
 .compare-items__goods {
   display: flex;
@@ -331,8 +334,8 @@ p {
   background: #000 url("../img/close.svg") no-repeat center;
 }
 .compare-items__img {
-  display: block;
   margin-right: 25px;
+  display: block;
   bottom: 0;
 }
 .compare-items__img img {
@@ -461,11 +464,11 @@ p {
 }
 
 .compare-footer {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 40px;
 }
 .compare-footer__title {
   margin-bottom: 33px;
@@ -613,8 +616,8 @@ p {
   }
 
   .compare-items {
-    display: block;
     padding-bottom: 35px;
+    display: block;
   }
   .compare-items__item {
     display: flex;
@@ -705,8 +708,8 @@ p {
     cursor: pointer;
   }
   .compare-table__type {
-    min-width: 100%;
     margin-bottom: 15px;
+    min-width: 100%;
     font-size: 14px;
     line-height: 17px;
   }

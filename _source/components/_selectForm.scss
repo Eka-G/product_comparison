@@ -1,36 +1,36 @@
 .compare-items__select {
-    display: block;
-    min-width: 250px;
-    padding: 16px 20px;
-    -webkit-appearance: none; //remove default arrow
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ACB8CA;
-    border-radius: 10px;
-    background: none;
-    color: #ACB8CA;
-  }
+  display: block;
+  min-width: 250px;
+  padding: 16px 20px;
+  -webkit-appearance: none; //remove default arrow
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ACB8CA;
+  border-radius: 10px;
+  background: none;
+  color: #ACB8CA;
+}
   
-  .compare-items__select-wrap {
-    position: relative;
-    display: inline-block;
+.compare-items__select-wrap {
+  position: relative;
+  display: inline-block;
   
-    //custom arrow
-    &:after { 
-    position: absolute;
-    top: 40%;
-    right: 22px;
-    content: '';
-    pointer-events: none; //restores pressing the custom arrow
-    width: 15px;
-    height: 15px;
-    background: url('../img/selectArrow.svg') no-repeat center;
-    
-    //arrow from the border
-    // border-bottom: 2px solid #000;
-    // border-right: 2px solid #000;
-    // transform: rotate(45deg) translate(1px, 2px);
+  //custom arrow
+  &:after { 
+  position: absolute;
+  top: 40%;
+  right: 22px;
+  content: '';
+  pointer-events: none; //restores pressing the custom arrow
+  width: 15px;
+  height: 15px;
+  background: url('../img/selectArrow.svg') no-repeat center;
+  
+  //arrow from the border
+  // border-bottom: 2px solid #000;
+  // border-right: 2px solid #000;
+  // transform: rotate(45deg) translate(1px, 2px);
   }
 }
