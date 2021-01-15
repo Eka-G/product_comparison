@@ -7,10 +7,10 @@
   'base/reset';
 
 @import
-  'layout/content';
-
-@import
   'components/buttons',
   'components/selectForm',
   'components/radioButton',
   'components/tooltip';
+  
+@import
+  'layout/content';

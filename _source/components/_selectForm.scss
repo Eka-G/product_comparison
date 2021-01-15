@@ -1,6 +1,6 @@
 .compare-items__select {
     display: block;
-    width: 250px;
+    min-width: 250px;
     padding: 16px 20px;
     -webkit-appearance: none; //remove default arrow
     -moz-appearance: none;
@@ -34,4 +34,3 @@
     // transform: rotate(45deg) translate(1px, 2px);
   }
 }
-  

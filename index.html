@@ -44,11 +44,15 @@
 						</div>
 
 						<form action="#" class="compare-items__choose-parameters">
-							<input type="radio" id="allParameters" name="chooseParameters" value="all Parameters" class="compare-items__radio" checked>
-							<label for="allParameters" class="compare-items__parameter">Все характеристики</label> <br>
-
-							<input type="radio" id="justDifference" name="chooseParameters" value="difference" class="compare-items__radio">
-							<label for="justDifference" class="compare-items__parameter">Показать только различия</label>
+							<div class="radio-wrapper">
+								<input type="radio" id="allParameters" name="chooseParameters" value="all Parameters" class="compare-items__radio" checked>
+								<label for="allParameters" class="compare-items__parameter">Все характеристики</label>
+							</div>
+							
+							<div class="radio-wrapper">
+								<input type="radio" id="justDifference" name="chooseParameters" value="difference" class="compare-items__radio">
+								<label for="justDifference" class="compare-items__parameter">Показать только различия</label>
+							</div>
 						</form>
 					</div> <!-- compare-items__filter -->
 					
@@ -69,7 +73,7 @@
 									</div>
 
 									<div class="compare-items__buy">
-										<button type="button" class="card btn-black-s">В корзину</button>
+										<button type="button" class="card btn-black-s"><span>В корзину</span></button>
 										<a href="#" class="buy-now">Купить в 1 клик</a>
 									</div>
 								</div>
@@ -92,7 +96,7 @@
 									</div>
 
 									<div class="compare-items__buy">
-										<button class="card btn-black-s">В корзину</button>
+										<button class="card btn-black-s"><span>В корзину</span></button>
 										<a href="#" class="buy-now">Купить в 1 клик</a>
 									</div>
 								</div>
@@ -466,7 +470,7 @@
 						<div class="compare-table__parameter compare-table__parameter--group">
 							<div class="compare-table__type compare-table__type--group-name compare-table__type--help">
 								<h4>Разъем Lightning 8 Pin</h4>
-								<p id="help-info" class="compare-table__help tooltips" data-tooltip="<strong>4500 мАч</strong> - это примерно 30 часов активного использования устройства"></p>
+								<span id="help-info" class="compare-table__help tooltips" data-tooltip="<strong>4500 мАч</strong> - это примерно 30 часов активного использования устройства"></span>
 							</div>
 
 							<div class="compare-table__values">
