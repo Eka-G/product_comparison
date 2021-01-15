@@ -16,7 +16,7 @@ $(document).ready(function() {
 	$('.compare-table__group .compare-table__parameter').on('click', toggleIt);
 
 	function toggleIt(){
-	    $(this).siblings().slideToggle(500);
+	  $(this).siblings().slideToggle(500);
 	}
 
 });
